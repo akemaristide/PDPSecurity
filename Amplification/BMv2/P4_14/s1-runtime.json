@@ -1,0 +1,31 @@
+{
+  "target": "bmv2",
+  "p4info": "build/SoK_Amp_P4_14.p4.p4info.txtpb",
+  "bmv2_json": "build/SoK_Amp_P4_14.json",
+  "table_entries": [
+    {
+      "table": "experiment",
+      "match": {
+        "tcp.dport": 8192
+      },
+      "action_name": "normal_forward",
+      "action_params": {}
+    },
+    {
+      "table": "experiment",
+      "match": {
+        "tcp.dport": 16384
+      },
+      "action_name": "recirculate_only",
+      "action_params": {}
+    },
+    {
+      "table": "experiment",
+      "match": {
+        "tcp.dport": 20480
+      },
+      "action_name": "amplify",
+      "action_params": {}
+    }
+  ]
+}

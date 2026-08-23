@@ -1,0 +1,6 @@
+{
+  "target": "bmv2",
+  "p4info": "build/SoK_Amp_P4_16.p4.p4info.txtpb",
+  "bmv2_json": "build/SoK_Amp_P4_16.json",
+  "table_entries": []
+}

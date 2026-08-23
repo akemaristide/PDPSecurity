@@ -1,0 +1,129 @@
+starting frontend
+./SoK_Amp_P4_14-integrated.p4(17): [--Wwarn=unknown] warning: Unknown annotation: readonly
+extern void copyPacket(mutable_packet self, @readonly mutable_packet other);
+                                             ^^^^^^^^
+./SoK_Amp_P4_14-integrated.p4(33): [--Wwarn=unknown] warning: Unknown annotation: matchKind
+    @matchKind("exact")
+     ^^^^^^^^^
+./SoK_Amp_P4_14-integrated.p4(37): [--Wwarn=unknown] warning: Unknown annotation: controlled
+@controlled extern flow_def_experiment_0 query_experiment_0(@matchKind("exact") in bit<16> experiment_0_tcp_dport);
+ ^^^^^^^^^^
+/usr/local/share/p4c/p4include/v1model.p4(31): [--Wwarn=unknown] warning: Unknown annotation: metadata
+@metadata @name("standard_metadata")
+ ^^^^^^^^
+/usr/local/share/p4c/p4include/v1model.p4(59): [--Wwarn=unknown] warning: Unknown annotation: alias
+    @alias("queueing_metadata.enq_timestamp")
+     ^^^^^
+/usr/local/share/p4c/p4include/v1model.p4(442): [--Wwarn=unknown] warning: Unknown annotation: pipeline
+@pipeline
+ ^^^^^^^^
+/usr/local/share/p4c/p4include/v1model.p4(460): [--Wwarn=unknown] warning: Unknown annotation: deparser
+@deparser
+ ^^^^^^^^
+./SoK_Amp_P4_14-integrated.p4(269): [--Wwarn=unknown] warning: Unknown annotation: noreturn
+@impl("parse_and_run_") @noreturn extern void parse_and_run(mutable_packet pin, inout metadata metas_, inout standard_metadata_t standard_meta);
+                         ^^^^^^^^
+frontend done in 912ms
+done unrolling 0 36 in 0ms
+done graph buildup  1095 in 50ms, linking in 2ms
+done chaotic iterations 1095, iters: 1972 in 52 ms
+done constant propagation #nodes:1095 #vars:457 in 109ms
+done constant propagation and simplification #nodes:1095 vs 894 #foldings:323 in:141ms
+done chaotic iterations 894, iters: 902 in 1 ms
+done unrolling 1 894 in 17ms
+intra-basic block simplifications 44ms
+done chaotic iterations 76, iters: 76 in 2 ms
+dom tree simplifications for 232,776/922
+dom tree simplifications for 232,0/146
+dom tree simplifications for 776/76 58ms
+simplified 3,781 if conditions
+boundaries computed: 3 in 0ms
+obtained specs: 0 in 7ms
+don't care reasoning done in 145 ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_egress_start.recirculate_flag:6 took 0ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:7 took 0ms
+building parent decision tree 0ms
+partitioning hdr_ParserImpl.ipv4.valid_:3 took 0ms
+refined decision tree hdr_ParserImpl.ipv4.valid_:3 in 0ms
+partitioning hdr_ParserImpl.tcp.valid_:3 took 0ms
+refined decision tree hdr_ParserImpl.tcp.valid_:3 in 0ms
+building parent decision tree 0ms
+partitioning __track_egress_spec_ingress:7 took 0ms
+partitioning metas__PSAImpl_ingress_start._amp_meta_do_recirc0:7 took 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:5 took 0ms
+partitioning standard_meta_PSAImpl_ingress_start.egress_spec:7 took 0ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_egress_start.recirculate_flag:5 took 0ms
+refined decision tree standard_meta_PSAImpl_egress_start.recirculate_flag:5 in 0ms
+building parent decision tree 0ms
+partitioning clone_metas_2_PSAImpl_ingress_start._amp_meta_do_recirc0:3 took 0ms
+building parent decision tree 0ms
+partitioning hdrs__PSAImpl_egress_start.ipv4.valid_:3 took 0ms
+partitioning hdrs__PSAImpl_egress_start.tcp.valid_:3 took 0ms
+partitioning metas__PSAImpl_egress_start._amp_meta_do_recirc0:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.clone_spec:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.egress_spec:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.instance_type:3 took 0ms
+building parent decision tree 0ms
+partitioning __track_egress_spec_ingress:6 took 0ms
+refined decision tree __track_egress_spec_ingress:6 in 0ms
+partitioning metas__PSAImpl_ingress_start._amp_meta_do_recirc0:6 took 0ms
+refined decision tree metas__PSAImpl_ingress_start._amp_meta_do_recirc0:6 in 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:4 took 0ms
+refined decision tree standard_meta_PSAImpl_ingress_start.clone_spec:4 in 0ms
+partitioning standard_meta_PSAImpl_ingress_start.egress_spec:6 took 0ms
+refined decision tree standard_meta_PSAImpl_ingress_start.egress_spec:6 in 0ms
+slicing bug 0 106/138 took 4ms
+building parent decision tree 0ms
+partitioning hdr_ParserImpl.tcp.valid_:3 took 0ms
+refined decision tree hdr_ParserImpl.tcp.valid_:3 in 0ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_egress_start.recirculate_flag:6 took 0ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:7 took 0ms
+building parent decision tree 0ms
+partitioning clone_metas_2_PSAImpl_ingress_start._amp_meta_do_recirc0:3 took 0ms
+building parent decision tree 0ms
+partitioning __track_egress_spec_ingress:6 took 0ms
+refined decision tree __track_egress_spec_ingress:6 in 0ms
+partitioning metas__PSAImpl_ingress_start._amp_meta_do_recirc0:6 took 0ms
+refined decision tree metas__PSAImpl_ingress_start._amp_meta_do_recirc0:6 in 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:4 took 0ms
+refined decision tree standard_meta_PSAImpl_ingress_start.clone_spec:4 in 0ms
+partitioning standard_meta_PSAImpl_ingress_start.egress_spec:6 took 0ms
+refined decision tree standard_meta_PSAImpl_ingress_start.egress_spec:6 in 0ms
+building parent decision tree 0ms
+partitioning standard_meta_PSAImpl_egress_start.recirculate_flag:5 took 0ms
+refined decision tree standard_meta_PSAImpl_egress_start.recirculate_flag:5 in 0ms
+building parent decision tree 0ms
+partitioning __track_egress_spec_ingress:7 took 0ms
+partitioning metas__PSAImpl_ingress_start._amp_meta_do_recirc0:7 took 0ms
+partitioning standard_meta_PSAImpl_ingress_start.clone_spec:5 took 0ms
+partitioning standard_meta_PSAImpl_ingress_start.egress_spec:7 took 0ms
+building parent decision tree 0ms
+partitioning metas__PSAImpl_egress_start._amp_meta_do_recirc0:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.clone_spec:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.egress_spec:3 took 0ms
+partitioning standard_meta_PSAImpl_egress_start.instance_type:3 took 0ms
+check result:sat #assertions:114 time:70ms
+get model time:0ms
+sat in 1 iters, 3ms
+check result:sat #assertions:115 time:1ms
+get model time:0ms
+sat in 1 iters, 0ms
+check result:unsat #assertions:116 time:0ms
+without specs 2 bugs in 126ms
+check result:sat #assertions:114 time:2ms
+get model time:0ms
+sat in 1 iters, 0ms
+slicing bug 3 40/61 took 0ms
+bug 3,WARNING: uncontrolled bug
+check result:sat #assertions:115 time:0ms
+get model time:0ms
+sat in 1 iters, 0ms
+slicing bug 1 88/104 took 2ms
+bug 1,WARNING: uncontrolled bug
+check result:unsat #assertions:116 time:0ms
+with specs 2 bugs in 82ms

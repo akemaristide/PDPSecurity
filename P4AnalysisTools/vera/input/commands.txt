@@ -1,0 +1,6 @@
+table_set_default experiment default_branch
+table_set_default recirc_table do_recirculate
+table_add experiment normal_forward 8192 =>
+table_add experiment recirculate_only 16384 =>
+table_add experiment amplify 20480 =>
+mirroring_add 5 3

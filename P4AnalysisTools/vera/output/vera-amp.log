@@ -1,0 +1,4 @@
+preparing to run vera against inputs/test-cases/SoK_Amp_P4_14/SoK_Amp_P4_14-ppc.p4
+Aug 11, 2026 4:55:02 PM org.change.p4.control.queryimpl.PacketKind$$anonfun$apply$1 apply
+INFO: max packet size 432
+now checking dataplane inputs/test-cases/SoK_Amp_P4_14/commands.txt
