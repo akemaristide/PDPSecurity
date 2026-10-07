@@ -1,4 +1,4 @@
-# SoK: The Security of P4-Programmable Network Devices
+# The Security of P4-Programmable Network Devices
 
 This repository contains the artifacts accompanying our paper, including the cross-target traffic-amplification case study and its evaluation with existing P4 analysis tools.
 
